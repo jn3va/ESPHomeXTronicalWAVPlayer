@@ -8,9 +8,13 @@ To use this with ESPHome
 
 1) Create a folder inside of the config/esphome folder on homeassistant called esp_wav_player_incl
 2) Place Xtronicals DAC library for WAV (XT_DAC_Audio) in this folder.  You need 3 files
+
      MusicDefinitions.h
+     
      XT_DAC_Audio.cpp
+     
      XT_DAC_Audio.h
+     
      
      You can get these files from XTronicals site linked above.  I have included the files in the example sub-folder listed here.
      I've tested this setup with verison 4.2.1 / 2019
