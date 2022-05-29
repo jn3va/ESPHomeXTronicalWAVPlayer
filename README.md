@@ -37,15 +37,16 @@ To use this with ESPHome
  
  
 4) In esphome create a new device and paste in the example esp-wav-player.yaml code
+
     Update the passwords to match your configurtion
+    
     Compile and upload
 
-  You will get a switch that when activated will play the defined WAV.
+5) You will get a switch that when activated will play the defined WAV.  The WAV only plays when the switch is turned on.  Nothing is defined when the switch turns off.
   
 I use an Adafruit PAM8302 to interface to the speaker for added volume  
 
-My configuration uses an ESP32 WROOM DEV board
-Pinout connections as follows:
+My configuration uses an ESP32 WROOM DEV board.  Pinout connections as follows:
 
   GPIO25 -> A+ on the PAM8302
   
