@@ -28,8 +28,8 @@ To use this with ESPHome
    };
  
 4) In esphome create a new device and paste in the example esp-wav-player.yaml code
-    Updatethe passwords to match your configurtion
-    Compule and upload
+    Update the passwords to match your configurtion
+    Compile and upload
 
   You will get a switch that when activated will play the defined WAV.
   
