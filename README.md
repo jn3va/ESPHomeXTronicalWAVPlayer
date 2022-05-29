@@ -21,7 +21,7 @@ To use this with ESPHome
      
 3) Also place esp_wav_player.h in this folder
  This file is the interface between ESPHome and XTronicals code.
- This file contains the wav data encoded as hex, global declarations and the override functions that ESPHOME uses to run code that woudl be needed in a void loop() function if you were using this from the Arduino IDE.
+ This file contains the wav data encoded as hex, global declarations and the override functions that ESPHOME uses to run code that would be needed in a void loop() function if you were using this from the Arduino IDE.
  
    When you replace the WAV sound with your own, remember to change the length
    i.e.  4608 to match the lengh of your WAV
