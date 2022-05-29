@@ -1,0 +1,49 @@
+esphome:
+  name: esp-wav-player
+  # subdirectory where library *.h and *.cpp are placed 
+  includes:
+    - esp_wav_player_incl/
+
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+  password: "---secretchangethis---"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Esp-Wav-Player Fallback Hotspot"
+    password: "---secretchangethis---"
+
+captive_portal:
+
+output:
+  - platform: custom
+    type: binary
+    lambda: |-
+      auto wav_player_out1 = new WAVPlayerStartup();
+      App.register_component(wav_player_out1);
+      return {wav_player_out1};
+    outputs:
+      id: wav_player1
+      
+
+switch:
+  - platform: output
+    id: espwav_startup_sound
+    name: espwav_startup_sound
+    output: "wav_player1"
