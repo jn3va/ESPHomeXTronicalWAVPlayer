@@ -36,6 +36,8 @@ To use this with ESPHome
 I use an Adafruit PAM8302 to interface to the speaker for added volume  
 
 My configuration uses an ESP32 WROOM DEV board
-Pinout connections as follows
+Pinout connections as follows:
+
   GPIO25 -> A+ on the PAM8302
+  
   GND    -> A- on the PAM8302
