@@ -1,4 +1,4 @@
-# ESPHomeXTronicalWAVPlayer
+# ESPHome XTronical WAV Player
 How to use XTronical's wav player from ESPHome
 
 XTronical has a very nice set of tutorials and a library for playing WAV files on an ESP8266 or ESP32
