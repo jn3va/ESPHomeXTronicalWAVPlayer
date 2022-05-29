@@ -24,12 +24,17 @@ To use this with ESPHome
  This file contains the wav data encoded as hex, global declarations and the override functions that ESPHOME uses to run code that would be needed in a void loop() function if you were using this from the Arduino IDE.
  
    When you replace the WAV sound with your own, remember to change the length
-   i.e.  4608 to match the lengh of your WAV
+   i.e.  4608 to match the lengh of your WAV  e.g.:
+   
    
    const unsigned char PROGMEM ErrorWav[4608] = {
+   
      0x52, 0x49, 0x46, 0x46, 0xF8, 0x11, 0x00, 0x00, 0x57, 0x41, 0x56, 0x45,
+     
      ...
+     
    };
+ 
  
 4) In esphome create a new device and paste in the example esp-wav-player.yaml code
     Update the passwords to match your configurtion
