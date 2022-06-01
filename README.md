@@ -51,3 +51,11 @@ My configuration uses an ESP32 WROOM DEV board.  Pinout connections as follows:
   GPIO25 -> A+ on the PAM8302
   
   GND    -> A- on the PAM8302
+
+
+--------------
+sound folder
+--------------
+The sound folder has the StartUp-sound.WAV file that I used in the example, included here so you can hear what this project will play if you are successful.  You do not include the /sound folder in the ESPHome folder.
+
+The .c file which shows the hex code was created by loading the wav file in the HDX editor ( https://mh-nexus.de/en/hxd/ ) and saving the file as a .c file. 
